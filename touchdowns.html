@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="propsstyle.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh; /* Adjust the height as needed */
+        }
+
+        section {
+            text-align: center;
+        }
+
+        .oval-input-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .oval-input {
+            border: 2px solid #333;
+            border-radius: 25px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .oval-submit {
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green color */
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .oval-submit:hover {
+            background-color: #45a049; /* Darker green color on hover */
+        }
+    </style>
+    <title>Touchdowns</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Touchdowns</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rushingYards.html">Rushing Yards</a>
+        <a href="receivingYards.html">Receiving Yards</a>
+        <a href="touchdowns.html">Touchdowns</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Welcome to the player touchdowns section!</h2>
+            <p>Enter your desired player's name and click search.</p>
+        </section>
+    </main>
+
+    <div class="oval-input-container">
+        <input type="text" class="oval-input" id="playerNameInput" placeholder="Enter player name here">
+        <button class="oval-submit" onclick="searchPlayer()">Submit</button>
+    </div>
+
+    <!-- Display area for player stats -->
+    <div id="playerStatsContainer" style="text-align: center; margin-top: 20px;"></div>
+    <div style="height: 50px;"></div>
+
+    <script>
+        function searchPlayer() {
+            // Get the player name from the input field
+            var playerName = document.getElementById('playerNameInput').value;
+
+            // Perform some logic to fetch the player stats (replace this with your actual logic)
+            // For demonstration purposes, we'll just display a message with the player name
+            var playerStats = "Stats for " + playerName + ":<br>" +
+            "Game 1: Touchdowns - 0.5<br>" +
+            "Game 2: Touchdowns - 0.5<br>" +
+            "Game 3: Touchdowns - 0.5<br>" +
+            "Game 4: Touchdowns - 0.5<br>" +
+            "Game 5: Touchdowns - 0.5<br>" +
+            "Game 6: Touchdowns - 0.5<br>" +
+            "Game 7: Touchdowns - 0.5<br>" +
+            "Game 8: Touchdowns - 0.5<br>" +
+            "Game 9: Touchdowns - 0.5<br>" +
+            "Game 10: Touchdowns - 0.5<br>" +
+            "Game 11: Touchdowns - 0.5<br>" +
+            "Game 12: Touchdowns - 0.5<br>" +
+            "Game 13: Touchdowns - 0.5<br>" +
+            "Game 14: Touchdowns - 0.5<br>" +
+            "Game 15: Touchdowns - 0.5<br>" +
+            "Game 16: Touchdowns - 0.5<br>" +
+            "Game 17: Touchdowns - 0.5<br>" +
+            "Game 18: Touchdowns - 0.5<br>" +
+            "Game 19: Touchdowns - 0.5<br>" +
+            "Game 20: Touchdowns - 0.5&nbsp";
+
+
+            // Display the player stats in the designated container
+            document.getElementById('playerStatsContainer').innerHTML = playerStats;
+        }
+    </script>
+
+</body>
+
+</html>
